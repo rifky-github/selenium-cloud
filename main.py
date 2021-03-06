@@ -13,9 +13,9 @@ driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), c
 
 
 
-driver.get('https://brainly.co.id/tugas/8600866')
+driver.get('https://sman17sby.simpan.id/index.php/login')
 
-tulisan  = driver.find_element_by_xpath('/html/body/div[2]/div/div[2]/div[1]/div[1]/div[1]/article/div/div/div[2]/div/div/h1/span[1]').text
+tulisan  = driver.find_element_by_class_name('copyright').text
 
-print('[Tulisan Yang Harus Keluar]\n"Kerak samudra lebih dinamis dibandingkan kerak benua. kerak samudra selalu mengalami pembaruan oleh aktivitas"\n\n')
+print('[Tulisan Yang Harus Keluar]\nCopyright © 2014 - 2021 SMA NEGERI 17 SURABAYA by SansekertaIndonesia - QuickEdu School\n\n')
 print('[Output]\n' + tulisan)
